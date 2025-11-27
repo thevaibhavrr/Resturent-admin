@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from 'react-router-dom'
-import { LayoutDashboard, Building2, CreditCard, LogOut, Menu, X } from 'lucide-react'
+import { LayoutDashboard, Building2, CreditCard, Printer, LogOut, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
 interface User {
@@ -22,6 +22,7 @@ export default function DashboardLayout({ user, onLogout }: DashboardLayoutProps
     { name: 'Dashboard', href: '/', icon: LayoutDashboard },
     { name: 'Restaurants', href: '/restaurants', icon: Building2 },
     { name: 'Plans', href: '/plans', icon: CreditCard },
+    { name: 'Bluetooth Printer', href: '/bluetooth-printer', icon: Printer },
   ]
 
   const isActive = (href: string) => {

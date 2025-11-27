@@ -1,6 +1,8 @@
 // const API_BASE = 'http://localhost:3000/api';
 // const API_BASE = 'https://resturent-backend-l8jk.onrender.com/api';
-const API_BASE = 'https://restaurant-backend-971455500628.asia-south1.run.app/api';
+// const API_BASE = 'https://restaurant-backend-971455500628.asia-south1.run.app/api';
+const API_BASE = `https://striking-prosperity-production.up.railway.app/api`;
+
 
 export interface SuperAdminLoginCredentials {
   username: string;

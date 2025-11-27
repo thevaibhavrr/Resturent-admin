@@ -5,7 +5,6 @@ import DashboardLayout from './components/DashboardLayout'
 import Dashboard from './pages/Dashboard'
 import Restaurants from './pages/Restaurants'
 import Plans from './pages/Plans'
-import BluetoothPrinter from './pages/BluetoothPrinter'
 import { Toaster } from './components/Toast'
 
 interface User {
@@ -71,7 +70,6 @@ function App() {
               <Route index element={<Dashboard />} />
               <Route path="restaurants" element={<Restaurants />} />
               <Route path="plans" element={<Plans />} />
-              <Route path="bluetooth-printer" element={<BluetoothPrinter />} />
             </Route>
             <Route path="/login" element={<Navigate to="/" replace />} />
             <Route path="*" element={<Navigate to="/" replace />} />
